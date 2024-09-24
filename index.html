@@ -12,9 +12,11 @@
     />
   </head>
   <body>
-    <header class="sticky top-0 bg-[#F9F7F3] shadow-md lg:px-24">
+    <header class="sticky top-0 bg-[#F9F7F3] shadow-md lg:px-24 mb-16">
       <nav class="container mx-auto flex items-center justify-between p-4">
-        <button class="bg-[#B4F461] btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
+        <button
+          class="px-4 py-2 text-black font-semibold bg-[#B4F461] rounded-lg"
+        >
           Blog
         </button>
         <div class="flex items-center">
@@ -35,24 +37,26 @@
         </div>
       </nav>
     </header>
-
-    <!-- Main Content -->
-    <section>
-      <div class="p-8">
-        <!-- Adding more content to make scrolling visible -->
-        <div class="max-w-7xl mx-auto py-12">
-          <h1 class="text-3xl font-bold mb-4">Welcome to My Website</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
-            perferendis?
-          </p>
-          <p class="mt-4">Keep scrolling to see the sticky navbar in action.</p>
-        </div>
-        <!-- Add some more content to allow scrolling -->
-        <div class="h-screen bg-gray-200"></div>
-        <div class="h-screen bg-gray-300"></div>
-        <div class="h-screen bg-gray-400"></div>
+    <section name="buttons">
+      <div class="flex justify-center gap-2">
+        <button
+          id="button1"
+          class="px-4 py-2 text-black font-semibold bg-[#B4F461] rounded-lg"
+          onclick="showSectionById('donation', this)"
+        >
+          Donation
+        </button>
+        <button
+          id="button2"
+          class="px-4 py-2 text-gray-700 font-semibold border-2 rounded-lg"
+          onclick="showSectionById('history', this)"
+        >
+          History
+        </button>
       </div>
     </section>
+    <section id="donation" class="">This is the donation section.</section>
+    <section id="history" class="hidden">This is the history section.</section>
+    <script src="js/features.js"></script>
   </body>
 </html>
