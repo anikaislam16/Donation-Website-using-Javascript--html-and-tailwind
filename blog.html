@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <header class="sticky top-0 bg-[#F9F7F3] shadow-md lg:px-24 mb-16">
+    <header class="sticky top-0 bg-[#F9F7F3] shadow-md lg:px-24 h-16 z-10">
       <nav class="container mx-auto flex items-center justify-between p-4">
         <button
           id="blog"
@@ -48,6 +48,109 @@
       </nav>
     </header>
 
+    <section name="faq" class="mx-28">
+      <div class="flex items-center gap-1 sticky top-[70px] z-10 mb-7 bg-white">
+        <h1 class="text-4xl font-bold">Important FAQ</h1>
+        <img src="assets/icons8-question.gif" alt="question" />
+      </div>
+      <div class="flex flex-col gap-3">
+        <div
+          tabindex="0"
+          class="collapse collapse-arrow border-base-300 border"
+        >
+          <div class="collapse-title text-xl font-medium">
+            What is Document Object Model?
+          </div>
+          <div class="collapse-content">
+            <p class="text-justify">
+              The Document Object Model (DOM) is a programming interface for
+              HTML and XML documents. It defines the logical structure of
+              documents and the way they can be accessed and manipulated by
+              programming languages like JavaScript.
+            </p>
+          </div>
+        </div>
+        <div
+          tabindex="0"
+          class="collapse collapse-arrow border-base-300 border"
+        >
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <p class="text-justify">
+              To select an element from the DOM, you use JavaScript's document
+              object and various methods it provides. The most commonly used
+              method is getElementById(), which selects an element based on its
+              unique id attribute. Another popular method is querySelector(),
+              which allows you to select the first matching element based on CSS
+              selectors like element tags, classes, or IDs. For example, you can
+              use document.querySelector(".className") to select an element by
+              its class or document.querySelector("#idName") to select an
+              element by its ID. Additionally, there are other methods like
+              getElementsByClassName() and getElementsByTagName() that return
+              collections of elements based on their class or tag. These methods
+              are useful for manipulating specific parts of a webpage, such as
+              changing text, updating attributes, or responding to user events
+              like clicks or form submissions.
+            </p>
+          </div>
+         
+        </div>
+
+        <div
+          tabindex="0"
+          class="collapse collapse-arrow border-base-300 border"
+        >
+          <div class="collapse-title text-xl font-medium">
+            What is event delegation in the context of DOM and why it is useful?
+          </div>
+          <div class="collapse-content">
+            <p class="text-justify">
+              Event delegation is a technique in the DOM that attaches a single
+              event listener to a parent element instead of multiple listeners
+              to child elements. It leverages event bubbling, allowing the
+              parent to identify which child triggered the event using
+              event.target.
+            </p>
+            <p class="text-justify"></p>
+             The main advantages of event delegation include reduced memory usage by minimizing event listeners, automatic handling of new child elements, and cleaner code management. This makes it easier to maintain, particularly when dealing with multiple similar elements.
+            </p>
+          </div>
+        </div>
+         <div
+          tabindex="0"
+          class="collapse collapse-arrow border-base-300 border"
+        >
+          <div class="collapse-title text-xl font-medium">
+           How do you manipulate an element's attributes and styles using DOM?
+          </div>
+          <div class="collapse-content">
+            <p class="text-justify">
+              To change an element's attributes, you can use methods like setAttribute(), getAttribute(), or directly access properties of the element.
+            </p>
+            <p>
+                <b>Examples using setAttribute(), getAttribute():</b><br>
+                <p>
+                const element = document.getElementById('myElement');<br>
+                element.setAttribute('src', 'newImage.png'); // Change the source of an image<br>
+                const altText = element.getAttribute('alt'); // Get the alt text of the image<br>
+                </p>
+            </p>
+             <p>
+                <b>Examples using modifying style property</b><br>
+                <p>
+               element.style.color = 'red'; // Change text color to red<br>
+                element.style.backgroundColor = 'blue'; // Change background color to blue<br>
+                </p>
+            </p>
+          </div>
+          
+        </div>
+
+        
+      </div>
+    </section>
     <script src="js/navigate.js"></script>
   </body>
 </html>

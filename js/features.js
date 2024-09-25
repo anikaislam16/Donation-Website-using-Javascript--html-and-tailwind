@@ -1,6 +1,4 @@
-function showSectionById(Id, selectedButton) {
-    console.log('hi');
-    
+function showSectionById(Id, selectedButton) {    
   const section1 = document.getElementById("donation");
   const section2 = document.getElementById("history");
   section1.classList.add("hidden");
@@ -57,7 +55,7 @@ function handleDonation(
   const modal = document.getElementById("my_modal_4");
   modal.showModal();
 
-  // Add a notification to the history section
+  // Add details to the history section
   const historySection = document.getElementById("history");
   const currentDate = new Date().toString();
   let historyMessage ;
@@ -96,7 +94,5 @@ function handleDonation(
   historyEntry.appendChild(messageParagraph);
   historyEntry.appendChild(dateparagraph);
   historySection.appendChild(historyEntry);
-
-  // Clear the donation input
   donationInput.value = "";
 }
