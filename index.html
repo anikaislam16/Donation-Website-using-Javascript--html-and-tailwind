@@ -11,7 +11,7 @@
       type="text/css"
     />
   </head>
-  <body class="bg-white">
+  <body class="bg-white h-screen min-h-screen">
     <header class="sticky top-0 bg-white">
       <nav
         class="container mx-auto flex shadow-md bg-[#F9F7F3] items-center justify-between p-4 px-10 lg:px-28"
@@ -67,7 +67,7 @@
         </button>
       </div>
     </section>
-    <section id="donation" class="px-10 lg:px-28 flex flex-col gap-10">
+    <section id="donation" class="px-10 lg:px-28 flex flex-col gap-10 mb-16">
       <div class="bg-white shadow-md rounded-lg overflow-hidden p-8 border-2">
         <div class="flex flex-col md:flex-row gap-5">
           <img
@@ -220,7 +220,6 @@
             <h3 class="text-xl font-bold text-center">Successfully</h3>
             <div class="modal-action">
               <form method="dialog">
-                <!-- if there is a button, it will close the modal -->
                 <button class="btn items-center text-center">
                   Close Confirmation
                 </button>
@@ -233,6 +232,6 @@
     <section id="history" class="hidden px-10 lg:px-28"></section>
     <script src="js/features.js"></script>
     <script src="js/navigate.js"></script>
-    <footer class="h-20 mt-5 bg-[#F9F7F3]"></footer>
+    <footer class="bg-[#F9F7F3] h-20 relative"></footer>
   </body>
 </html>
