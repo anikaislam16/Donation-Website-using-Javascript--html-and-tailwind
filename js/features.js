@@ -90,7 +90,7 @@ function handleDonation(
   dateparagraph.style.color = "rgb(107, 114, 128)";
   dateparagraph.style.fontSize = '12px';
   messageParagraph.innerText = historyMessage;
-  dateparagraph.innerText = currentDate;
+  dateparagraph.innerText = "Date: "+currentDate;
   historyEntry.appendChild(messageParagraph);
   historyEntry.appendChild(dateparagraph);
   historySection.appendChild(historyEntry);
