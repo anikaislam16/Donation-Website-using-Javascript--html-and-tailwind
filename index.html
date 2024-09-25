@@ -15,9 +15,17 @@
     <header class="sticky top-0 bg-[#F9F7F3] shadow-md lg:px-24 mb-16">
       <nav class="container mx-auto flex items-center justify-between p-4">
         <button
+          id="blog"
           class="px-4 py-2 text-black font-semibold bg-[#B4F461] rounded-lg"
+          onclick="navigateToBlog()"
         >
           Blog
+        </button>
+        <button
+          id="home"
+          class="px-4 py-2 text-black font-semibold bg-[#B4F461] rounded-lg hidden"
+        >
+          Home
         </button>
         <div class="flex items-center">
           <img
@@ -40,7 +48,7 @@
       </nav>
     </header>
     <section name="buttons">
-      <div class="flex justify-center gap-2 mb-28">
+      <div class="flex justify-center gap-2 mb-20">
         <button
           id="button1"
           class="px-4 py-2 text-black font-semibold bg-[#B4F461] rounded-lg"
@@ -98,7 +106,7 @@
             <button
               id="flood-money-button"
               class="mt-4 w-full bg-[#B4F461] py-2 rounded-md font-bold"
-              onclick="handleDonation('flood-money-input', 'flood-money', 'total-money')"
+              onclick="handleDonation('flood-money-input', 'flood-money', 'total-money','flood')"
             >
               Donate Now
             </button>
@@ -145,7 +153,7 @@
             <button
               id="relief-money-button"
               class="mt-4 w-full bg-[#B4F461] py-2 rounded-md font-bold"
-              onclick="handleDonation('relief-money-input', 'relief-money', 'total-money')"
+              onclick="handleDonation('relief-money-input', 'relief-money', 'total-money','flood-relief')"
             >
               Donate Now
             </button>
@@ -192,7 +200,7 @@
             <button
               id="quota-money-button"
               class="mt-4 w-full bg-[#B4F461] py-2 rounded-md font-bold"
-              onclick="handleDonation('quota-money-input', 'quota-money', 'total-money')"
+              onclick="handleDonation('quota-money-input', 'quota-money', 'total-money','quota')"
             >
               Donate Now
             </button>
@@ -220,7 +228,8 @@
         </dialog>
       </section>
     </section>
-    <section id="history" class="hidden">This is the history section.</section>
+    <section id="history" class="hidden px-10 lg:px-28"></section>
     <script src="js/features.js"></script>
+    <script src="js/navigate.js"></script>
   </body>
 </html>

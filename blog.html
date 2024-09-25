@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header class="sticky top-0 bg-[#F9F7F3] shadow-md lg:px-24 mb-16">
+      <nav class="container mx-auto flex items-center justify-between p-4">
+        <button
+          id="blog"
+          class="px-4 py-2 text-black font-semibold bg-[#B4F461] rounded-lg"
+          onclick="navigateToHome()"
+        >
+          Home
+        </button>
+        <button
+          id="home"
+          class="px-4 py-2 text-black font-semibold bg-[#B4F461] rounded-lg hidden"
+        >
+          Home
+        </button>
+        <div class="flex items-center">
+          <img
+            src="assets/logo.png"
+            alt="donation"
+            class="h-5 w-5 md:h-10 md:w-10"
+          />
+          <span class="text-[10px] font-bold ml-3 lg:text-base"
+            >Donation Bangladesh</span
+          >
+        </div>
+        <div class="flex items-center justify-center">
+          <img src="assets/coin.png" alt="donation" class="h-5 w-5" />
+          <span
+            id="total-money"
+            class="text-[10px] lg:text-base font-bold ml-1 text-[#111111]"
+            >100000 BDT</span
+          >
+        </div>
+      </nav>
+    </header>
+
+    <script src="js/navigate.js"></script>
+  </body>
+</html>
